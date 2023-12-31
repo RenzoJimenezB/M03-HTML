@@ -6,7 +6,7 @@ body{
     border: 2px solid black;
     width: fit-content;
     margin: auto;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,11 +14,20 @@ body{
 }
 
 #menu{
-    border: 2px solid black;
     display: flex;
     gap: 2em;
     background-color: rgb(205, 205, 205);
 }
+
+#encabezado-formulario{
+    border: 2px solid black;
+    width: 40vw;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /* fuente */
@@ -38,6 +47,7 @@ body{
 p, li, label, span{
     font-size: 1.1em;
 }
+
 
 
 /* imágenes */
@@ -80,4 +90,24 @@ p, li, label, span{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+
+
+/* formulario */
+#items-formulario{
+    width: fit-content;
+    display: flex;
+    gap: 2em;
+}
+
+#etiquetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#datos{
+    display: flex;
+    flex-direction: column;
 }

@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" >
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1 class="titulo">BOLETÍN DE NOTICIAS</h1>
+        <div id="encabezado-formulario">
+            <h1 class="titulo">BOLETÍN DE NOTICIAS</h1>
+        </div>
     </header>
-
+    
     <hr>
 
     <main>
         <div>
             <h2 class="subtitulo">Formulario de suscripción</h2>
+            <br>
+
             <p>Introduzca sus datos personales para recibir información sobre: </p>
 
             <ol>
@@ -26,41 +31,80 @@
         </div>
 
         <hr>
-        <br>
 
-        <form>
-            <div>
-                <label for="nombre" >Nombre completo: </label>
-                <input type="text" name="nombre" placeholder="Apellidos y nombres" />
-            </div>
+        <article>
 
-            <div>
-                <label for="edad" >Edad: </label>
-                <input type="number" name="edad" />
-            </div>
+            <form>
+                <h3 class="subtitulo">Formulario N°1</h3>
+                <br>
+
+                <div>
+                    <label for="nombre" >Nombre completo: </label>
+                    <input type="text" name="nombre" placeholder="Apellidos y nombres" />
+                </div>
+                
+                <div>
+                    <label for="edad" >Edad: </label>
+                    <input type="number" name="edad" />
+                </div>
+                
+                <div>
+                    <label for="nacimiento" >Fecha de nacimiento: </label>
+                    <input type="date" name="nacimiento" />
+                </div>
+                
+                <div>
+                    <label for="teléfono" >Número de teléfono: </label>
+                    <input type="number" name="teléfono" placeholder="Celular" />
+                </div>
+                
+                <div>
+                    <label for="password" >Contraseña: </label>
+                    <input type="password" name="password" />
+                </div>
+                
+                <br>
+                <button>ENVIAR</button>
+            </form>
             
-            <div>
-                <label for="nacimiento" >Fecha de nacimiento: </label>
-                <input type="date" name="nacimiento" />
-            </div>
-
-            <div>
-                <label for="teléfono" >Número de teléfono: </label>
-                <input type="number" name="teléfono" placeholder="Celular" />
-            </div>
-
-            <div>
-                <label for="password" >Contraseña: </label>
-                <input type="password" name="password" />
-            </div>
-
-            <br>
-            <button>ENVIAR</button>
-        </form>
-
+        </article>
         <br>
+        <article>
+
+            <form>
+                <h3 class="subtitulo">Formulario N°2</h3>
+                <br>
+
+                <div id="items-formulario">
+                    
+                    <div id="etiquetas">
+                        <label for="nombre" >Nombre completo: </label>
+                        <label for="edad" >Edad: </label>
+                        <label for="nacimiento" >Fecha de nacimiento: </label>
+                        <label for="teléfono" >Número de teléfono: </label>
+                        <label for="password" >Contraseña: </label>
+                    </div>
+                    
+                    <div id="datos">
+                        <input type="text" name="nombre" placeholder="Apellidos y nombres" />
+                        <input type="number" name="edad" />
+                        <input type="date" name="nacimiento" />
+                        <input type="number" name="teléfono" placeholder="Celular" />
+                        <input type="password" name="password" />
+                    </div>
+                
+                </div>
+
+                <br>
+                <button>ENVIAR</button>
+            </form>
+
+        </article>
+      
+        <br>  
         <img src="./strokesss.jpg" class="gif" />
-    </main>
-    
-</body>
-</html>
+
+        </main>
+
+    </body>
+    </html>
