@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" >
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>THE STROKES</h1>
+        <div id="encabezado">
+            <h1 class="titulo" id="principal">THE STROKES</h1>
 
-        <span>HOME</span>
-        <span>MIEMBROS</span>
-        <span>DISCOGRAFÍA</span>
+            <div id="menu">
+                <span>HOME</span>
+                <span>MIEMBROS</span>
+                <span>DISCOGRAFÍA</span>
+            </div>
+        </div>
     </header>
 
     <main>
 
-        <img src="./the strokes.jpg" />
+        <br>
+        <img src="./the strokes.jpg" class="foto" />
 
         <p>
             The Strokes es una banda de rock estadounidense de la ciudad de Nueva York. Formada en 1998, la banda está compuesta por el cantante Julian Casablancas, los guitarristas Nick Valensi y Albert Hammond, Jr., el bajista Nikolai Fraiture y el baterista Fabrizio Moretti
@@ -26,12 +33,11 @@
 
         <section>
 
-            <h2>MIEMBROS</h2>
+            <h2 class="titulo">MIEMBROS</h2>
 
-            <br>
             <article>
 
-                <h3>Julian Casablancas</h3>
+                <h3 class="subtitulo">Julian Casablancas</h3>
 
                 <div>
                     <p>
@@ -42,13 +48,13 @@
                     </p>
                 </div>
 
-            <img src="./Julian.jpg" />
+            <img src="./Julian.jpg" class="foto" />
             
             </article>
             <br>
             <article>
 
-                <h3>Nick Valensi</h3>
+                <h3 class="subtitulo">Nick Valensi</h3>
 
                 <div>
                     <p>
@@ -59,13 +65,13 @@
                     </p>
                 </div>
 
-            <img src="./Nick Valensi.jpg" />
+            <img src="./Nick Valensi.jpg" class="foto" />
 
             </article>
             <br>
             <article>
 
-                <h3>Albert Hammond Jr.</h3>
+                <h3 class="subtitulo">Albert Hammond Jr.</h3>
 
                 <div>
                     <p>
@@ -76,13 +82,13 @@
                     </p>
                 </div>
 
-            <img src="./Albert Hammond.jpg" />
+            <img src="./Albert Hammond.jpg" class="foto" />
 
             </article>
             <br>
             <article>
 
-                <h3>Fabrizzio Moretti</h3>
+                <h3 class="subtitulo">Fabrizzio Moretti</h3>
 
                 <div>
                     <p>
@@ -93,13 +99,13 @@
                     </p>
                 </div>
 
-            <img src="./Fabrizio.jpg" />
+            <img src="./Fabrizio.jpg" class="foto" />
 
             </article>
             <br>
             <article>
 
-                <h3>Nikolai Fraiture</h3>
+                <h3 class="subtitulo">Nikolai Fraiture</h3>
 
                 <div>
                     <p>
@@ -110,7 +116,7 @@
                     </p>
                 </div>
 
-            <img src="./Nikolai.jpg" />
+            <img src="./Nikolai.jpg" class="foto" />
 
             </article>
         
@@ -119,18 +125,50 @@
         <hr>
         <section>
 
-            <h2>DISCOGRAFÍA</h2>
+            <h2 class="titulo">DISCOGRAFÍA</h2>
 
             <article>
 
                 <ul>
-                    <li>Is this it</li>
-                    <li>Room on fire</li>
-                    <li>First impressions of earth</li>
+                    <li>Is This It</li>
+                    <li>Room on Fire</li>
+                    <li>First Impressions of Earth</li>
                     <li>Angles</li>
                     <li>Comedown machine</li>
-                    <li>The new abnormal</li>
+                    <li>The New Abnormal</li>
                 </ul>
+
+                
+            </article>
+            <article>
+                <div id="cards-container">
+                    
+                    <div class="cards">
+                        <h4 class="subtitulo">Is This It</h4>
+                        <img src="./is this it.jpg" class="albums"/>
+                    </div>
+                    <div class="cards">
+                        <h4 class="subtitulo">ROF</h4>
+                        <img src="./room on fire.jpg" class="albums" />
+                    </div>
+                    <div class="cards">
+                        <h4 class="subtitulo">FIE</h4>
+                        <img src="./first impressions.jpg" class="albums" />
+                    </div>
+                    <div class="cards">
+                        <h4 class="subtitulo">Angles</h4>
+                        <img src="./angles.jpg" class="albums" />
+                    </div>
+                    <div class="cards">
+                        <h4 class="subtitulo">CM</h4>
+                        <img src="./comedownmachine.jpg" class="albums" />
+                    </div>
+                    <div class="cards">
+                        <h4 class="subtitulo">TNA</h4>
+                        <img src="./thenewabnormal.jpg" class="albums" />
+                    </div>
+                    
+                </div>
             </article>
         </section>
     </main>
